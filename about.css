@@ -1,0 +1,66 @@
+/* ESTILO GERAL */
+section.about-page{
+    box-shadow: 0 0 40px 10px #ffffff42;
+    padding: 80px 4%;
+}
+
+section.about-page .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.about-page .txt-developer,
+.about-page .skills{
+    color: #fff;
+}
+
+section .box-shadow{
+    box-shadow: 0 0 40px 10px #ffffff42;
+}
+
+.about-page .txt-developer h2,
+.about-page .skills h2
+{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-page .txt-developer h2 span{
+    color: #00ff08;
+    display: block;
+}
+.about-page .skills h2 span{
+    color: #00ff08;
+}
+
+.about-page .txt-developer p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* SKILSS */
+
+section.about-page .flex{
+    justify-content: space-around;
+}
+
+.list-skils {
+    display: flex; /* Organiza os itens em linha */
+    list-style: none; /* Remove os pontos */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    justify-content:space-around;
+  }
+  
+.list-skils li {
+    margin: 10px 10px;
+    background-color: #00ff08; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    padding: 15px 30px; /* Espaçamento interno */
+    margin-right: 10px; /* Espaçamento entre os itens */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+

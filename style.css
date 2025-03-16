@@ -20,7 +20,10 @@ body{
     display: flex;
 }
 
-.btn-contacts button{
+.btn-contacts button,
+.btn-about button,
+.btn button,
+.btn-submit button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -32,7 +35,7 @@ body{
 }
 
 button:hover,
-form .btn-submit input:hover{
+form .btn-submit button:hover{
     box-shadow: 0px 0px 8px #00ff08;
     transform: scale(1.05);
 }
@@ -147,6 +150,8 @@ section.specialty .flex{
     border-radius: 20px;
     margin-top: 45px;
     transition: 1.2s;
+    text-align: center;
+    justify-content: center;
 }
 
 .specialty .specialty-box:hover{
@@ -220,6 +225,11 @@ section.portfolio .flex{
     justify-content: space-around;
 }
 
+section.portfolio .btn {
+    padding: 40px 4%;
+    text-align: center;
+}
+
 .img-port{
     width: 360px;
     height: 460px;
@@ -257,16 +267,24 @@ section.portfolio .flex{
 .overlay:hover{
     opacity: 1;
 }
+
 /* ----------------------------------------------------------- */
 
-/* FOMULÀRIO */
+/* FORMULÁRIO */
 
 section.form-email{
     padding: 80px 4%;
 }
 
+section.form-email p{
+    padding: 20px 8%;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
 form{
-    padding: 40px 0;
+    padding: 10px 0;
     margin-top: 40px;
     max-width: 500px;
     margin: 0 auto;

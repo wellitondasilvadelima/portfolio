@@ -22,26 +22,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body #top>
     <header>
         <div class="interface">
             <div class="logo">
                 <div class="logo-img">
-                    <img src="images/logo.png" alt="Logo DEV" height="100" width="100">
+                    <a href="index.html" onclick="window.location.href='index.html'">
+                        <img src="images/logo.png" alt="Logo DEV" height="100" width="100">
+                    </a>
                 </div>
             </div><!-- LOGO -->
 
             <nav class="menu-desktop">
                 <ul>
-                    <li> <a href="#">Início</a> </li>
-                    <li> <a href="#">Especialidade</a> </li>
-                    <li> <a href="#">Sobre</a> </li>
-                    <li> <a href="#">Projetos</a> </li>
+                    <li> <a href="index.html" onclick="window.location.href='index.html'">Início</a> </li>
+                    <li> <a href="#specialty">Especialidade</a> </li>
+                    <li> <a href="#about">Sobre</a> </li>
+                    <li> <a href="#projects">Projetos</a> </li>
                 </ul>
             </nav>
 
             <div class="btn-contacts">
-                <a href="#">
+                <a href="#contact">
                     <button> Contato </button>
                 </a>
             </div><!-- Button -->
@@ -56,17 +58,14 @@
 
                 <nav>
                     <ul>
-                        <li> <a href="#">Início</a> </li>
-                        <li> <a href="#">Especialidade</a> </li>
-                        <li> <a href="#">Sobre</a> </li>
-                        <li> <a href="#">Projetos</a> </li>
-                        <li> <a href="#">Contato</a></li>
+                        <li> <a href="index.html" onclick="window.location.href='index.html'">Início</a> </li>
+                        <li> <a href="#specialty">Especialidade</a> </li>
+                        <li> <a href="#about">Sobre</a> </li>
+                        <li> <a href="#projects">Projetos</a> </li>
                     </ul>
                 </nav>
             </div><!--menu-mobile -->
-            <div class="overlay-menu" id="overlay-menu">
-
-            </div><!--overlay-menu -->
+            <div class="overlay-menu" id="overlay-menu"></div><!--overlay-menu -->
         </div><!--interface -->
     </header>
     <main>
@@ -74,14 +73,15 @@
             <div class="interface">
                 <div class="flex">
                     <div class="txt-top-site">
-                        <H1> ÀS VEZES, SOLUÇÕES MAIS SIMPLES SÃO A CHAVE PARA RESOLVER PROBLEAS COMPLEXOS<span>.</span>
+                        <H1> SOLUÇÕES SIMPLES SÃO A CHAVE PARA RESOLVER PROBLEAS COMPLEXOS<span>.</span>
                         </H1>
                         <P>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Consequatur inventore quas sed obcaecati asperiores
-                            exercitationem possimus consequuntur voluptate facilis,
-                            dolores quis deleniti fuga necessitatibus voluptatum
-                            odit nesciunt, adipisci, debitis ipsum.
+                            A verdade sobre essa afirmação é que nem sempre encontrar a resposta certa é fácil, mas a
+                            inovação está em enxergar além do óbvio e transformar a complexidade em algo intuitivo e
+                            funcional. O design assertivo não é apenas
+                            estética; é a arte de criar experiências que fazem sentido, resolvendo problemas de forma
+                            eficiente e impactante. Aqui, cada projeto é guiado por essa filosofia: unir criatividade e
+                            estratégia para desenvolver soluções que realmente fazem a diferença.
                         </P>
                         <div class="btn-contacts">
                             <a href="#"><button>Entre em contato</button></a>
@@ -98,31 +98,39 @@
 
         </section><!-- TOP SITE-->
 
-        <section class="specialty">
+        <section class="specialty" id="specialty">
             <div class="interface">
                 <h2 class="title">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
                     <div class="specialty-box">
-                        <i class="bi bi-code-square"></i>
-                        <h3>Web site</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <i class="bi bi-robot"></i>
+                        <h3>RPA</h3>
+                        <p>Transformando processos manuais em fluxos de trabalho ágeis e eficientes. Seja para reduzir
+                            custos, aumentar a produtividade ou melhorar a precisão. Vamos transformar seu negócio com
+                            soluções inovadoras e automatizadas!</p>
                     </div>
                     <div class="specialty-box">
-                        <i class="bi bi-cart"></i>
-                        <h3>Loja Online</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <i class="bi bi-browser-chrome"></i>
+                        <h3>Web scraping</h3>
+                        <p>Transformando dados da web em insights valiosos e acionáveis. Seja para pesquisa de mercado,
+                            análise competitiva ou otimização de processos, o Web Scraping oferece vantagens,
+                            economizando tempo e proporcionando dados que fazem a diferença.</p>
                     </div>
                     <div class="specialty-box">
-                        <i class="bi bi-code-square"></i>
-                        <h3>Blog</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <i class="bi bi-app"></i>
+                        <h3>Aplicativos</h3>
+                        <p> Para automação, análise de dados ou desenvolvimento web, os aplicativos transformam desafios
+                            complexos em
+                            resultados simples e eficientes. Criando soluções poderosas que atendem às necessidades de
+                            negócios modernos. Se você busca resultados rápidos, confiáveis e personalizados, essas
+                            aplicações são a chave para o sucesso. </p>
                     </div>
                 </div><!--FLEX -->
             </div>
 
         </section><!-- specialty-->
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="interface">
                 <div class="flex">
                     <div class="img-about">
@@ -130,27 +138,24 @@
                     </div>
                     <div class="txt-about">
                         <h2>MUITO PRAZER, <span>SOU WELLITON LIMA.</span> </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Sint, in tempore? Doloremque totam soluta quis rerum aut ex,
-                            quas, ea, quam beatae dignissimos accusamus deserunt commodi
-                            tempore consequuntur perspiciatis odit?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Sint, in tempore? Doloremque totam soluta quis rerum aut ex,
-                            quas, ea, quam beatae dignissimos accusamus deserunt commodi
-                            tempore consequuntur perspiciatis odit?</p>
-                        <div class="btn-social">
-                            <a href="https://www.linkedin.com/in/wellitondasilvadelima" target="_blank"><button> <i
-                                        class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/wellitondasilvadelima" target="_blank"><button> <i
-                                        class="bi bi-github"></i>
-                                </button></a>
+                        <p>
+                            Bem-vindo! Sou um desenvolvedor Python especializado em automação, apaixonado por otimizar
+                            tarefas e transformar processos manuais em soluções ágeis e eficientes.
+                            Usando Selenium e PyAutoGUI, desenvolvo bots, scripts de automação e processos que reduzem o
+                            esforço humano em atividades repetitivas. Desde a automação de navegadores até o controle de
+                            interfaces gráficas, utilizo as melhores práticas para criar soluções confiáveis.</p>
+
+
+                        <div class="btn-about">
+                            <a href="about.html">
+                                <button>Saiba mais</button></a>
                         </div> <!-- BUTTON -->
                     </div> <!-- txt-about -->
                 </div><!--FLEX  -->
             </div> <!-- interface -->
         </section> <!-- ABOULT-->
 
-        <section class="portfolio">
+        <section class="portfolio" id="projects">
             <div class="interface">
                 <h2 class="title">MEU <span>PORTIFÓLIO</span></h2>
                 <div class="flex">
@@ -169,14 +174,20 @@
                             Projeto #3
                         </div>
                     </div>
-
                 </div><!-- FLEX-->
+                <div class="btn">
+                    <button>Veja Mais</button>
+                </div>
             </div><!-- interface-->
         </section><!-- portfolio-->
 
-        <section class="form-email">
+        <section class="form-email" id="contact">
             <div class="interface">
                 <h2 class="title">FALA <span>COMIGO.</span></h2>
+                <p>
+                    Se você busca alguém que une curiosidade, conhecimento técnico e paixão pela inovação, estou pronto
+                    para transformar desafios em soluções. Vamos criar algo incrível juntos? 🚀</p>
+
                 <form method="post" action="#" data-form> <!-- https://formsubmit.co/ajax/well.lyma0@gmail.com -->>
                     <input type="text" name="nome" id="nome-form" placeholder="Seu nome completo: " required>
                     <input type="text" name="email" id="email-form" placeholder="Seu email: " required>
@@ -195,7 +206,7 @@
             <div class="line-footer border-line">
                 <div class="flex">
                     <div class="logo-footer">
-                        <img src="images/logo.png" width="80" height="80" alt="logo">
+                        <a href="#top"><img src="images/logo.png" width="80" height="80" alt="logo"></a>
                     </div><!-- logo-footer  -->
                     <div class="btn-social">
                         <a href="https://www.linkedin.com/in/wellitondasilvadelima" target="_blank"><button> <i
