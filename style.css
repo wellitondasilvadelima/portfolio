@@ -12,13 +12,14 @@ body{
 }
 
 .interface{
-    max-width: 1280px;
+    max-width: 100%;
     margin: auto 0;
 }
 
 .flex{
     display: flex;
 }
+
 
 .btn-contacts button,
 .btn-about button,
@@ -58,7 +59,8 @@ h2.title span{
 /* ESTILO DO CABEÇALHO */
 
 header{
-    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff42;
+    padding: 20px 4%;
 }
 
 header > .interface {
@@ -83,6 +85,8 @@ header nav ul{
     list-style-type: none;
 }
 
+/* ESTILO MENU */
+
 header nav.menu-desktop ul li{
     display: inline-block;
     font-size: 18px;
@@ -92,7 +96,7 @@ header nav.menu-desktop ul li{
 /* ESTILO TOP SITE */
 
 section.top-site{
-    padding: 40px 4%;
+    padding: 60px 4%;
 }
 
 section.top-site .flex{
@@ -169,7 +173,7 @@ section.specialty .flex{
     margin: 15px 0px;
 }
 
-/* ESTILo SOBRE */
+/* ESTILO SOBRE */
 
 section.about{
     box-shadow: 0 0 40px 10px #ffffff42;
@@ -266,6 +270,15 @@ section.portfolio .btn {
 
 .overlay:hover{
     opacity: 1;
+}
+
+.img-port a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor do texto original */
+}
+  
+.img-port a:visited {
+    color: inherit; /* Evita que o link visitado tenha uma cor diferente */
 }
 
 /* ----------------------------------------------------------- */

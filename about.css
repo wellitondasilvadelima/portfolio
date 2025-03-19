@@ -1,7 +1,7 @@
 /* ESTILO GERAL */
 section.about-page{
     box-shadow: 0 0 40px 10px #ffffff42;
-    padding: 80px 4%;
+    padding: 60px 4%;
 }
 
 section.about-page .flex{
@@ -62,5 +62,15 @@ section.about-page .flex{
     margin-right: 10px; /* Espaçamento entre os itens */
     border-radius: 5px; /* Bordas arredondadas */
     text-align: center; /* Alinha o texto ao centro */
-  }
+}
 
+
+/* ESTILO MOBILE */
+
+@media screen and (max-width: 1150px){
+
+    .about-page .flex{
+    flex-direction: column-reverse;
+}
+
+}
