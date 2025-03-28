@@ -1,0 +1,53 @@
+section.project{
+    box-shadow: 0 0 40px 10px #ffffff42;
+    padding: 40px 4%;
+}
+
+section.project .flex{
+    margin-top: 40px;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Opcional: centraliza verticalmente */
+    gap: 20px;
+}
+
+section.project .img-project img{
+    max-width: 100%; /* Evita que a imagem ultrapasse a tela */
+    height: auto;
+    border-radius: 20px;
+}
+
+section.project .txt-project{
+    padding: 20px 4%;
+    color: #fff;
+}
+
+section.project .txt-project h2{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+section.project .txt-project h2 span{
+    color: #00ff08;
+}
+
+section.project .txt-project p{
+    padding: 5px 4%;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+section.project .img-interface img{
+    max-width: 100%; /* Evita que a imagem ultrapasse a tela */
+    height: auto;
+    border-radius: 20px;
+}
+section.project .img-interface figcaption{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
+    font-style: italic;
+    text-align: center;
+
+}

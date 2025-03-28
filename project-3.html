@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- FIM GOOGlE FONTS-->
+
+    <!-- BOOTSTRAO ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM BOOTSTRAO ICONS -->
+
+    <script src="script.js" defer></script>
+
+    <title>Welliton DEV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body #top>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <div class="logo-img">
+                    <a href="index.html" onclick="window.location.href='index.html'">
+                        <img src="images/logo.png" alt="Logo DEV" height="100" width="100">
+                    </a>
+                </div>
+            </div><!-- LOGO -->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li> <a href="index.html" onclick="window.location.href='index.html'">PÁGINA INICIAL</a> </li>
+                    <li> <a href="#description">DESCRIÇÃO</a> </li>
+                    <li> <a href="#technologies">TECNOLOGIAS</a> </li>
+                    <li> <a href="#graphical-interface">SOFTWARE</a> </li>
+                </ul>
+            </nav>
+
+            <div class="btn-open-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-open-menu -->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-close">
+                    <i class="bi bi-x-circle"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li> <a href="index.html" onclick="window.location.href='index.html'">Início</a> </li>
+                        <li> <a href="#description">DESCRIÇÃO</a> </li>
+                        <li> <a href="#technologies">TECNOLOGIAS</a> </li>
+                        <li> <a href="#graphical-interface">SOFTWARE</a> </li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile -->
+            <div class="overlay-menu" id="overlay-menu"></div><!--overlay-menu -->
+        </div><!--interface -->
+    </header>
+
+    <main>
+        <section class="project" id="project">
+            <div class="interface">
+                <h2 class="title">PROJETO: <span>OBSERVADOR DE PREÇOS</span></h2>
+                <div class="flex">
+                    <div class="img-project">
+                        <img src="images/observador_de_preços.png" alt="welliton DEV" height="400" width="400">
+                    </div>
+                    <div class="btn-social">
+                        <a href="#" target="_blank"><button>
+                                <i class="bi bi-github"></i></button>
+                        </a>
+                    </div>
+                    <div class="btn">
+                        <a href="#" target="_blank">
+                            <button>Download .EXE</i></button>
+                        </a>
+                    </div>
+                    <div class="txt-project">
+                        <p>
+                            A automação Observador de Preços (PriceWatcher) tem como objetivo monitorar os preços de
+                            produtos em um
+                            e-commerce com base em uma lista de links fornecida. Sempre que um preço de um produto
+                            diminuir, a aplicação informará o usuário sobre a alteração através de uma planiha de
+                            preços, ajudando a acompanhar descontos e promoções de forma eficiente.
+                        </p>
+                    </div>
+                </div><!-- FLEX-->
+            </div><!-- interface-->
+        </section><!-- project-->
+
+        <section class="project" id="description">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-project">
+                        <h2 class="title">DESCRIÇÃO DO <span>PROJETO</span></h2>
+                        <p>
+                            O propósito da aplicação é facilitar o processo de monitoramento de preços, permitindo que o
+                            usuário acompanhe as flutuações de preços de múltiplos produtos sem precisar visitá-los
+                            manualmente. Isso é útil, por exemplo, para quem deseja comprar produtos quando o preço
+                            atinge um valor mais baixo.
+                        </p>
+                        <p>
+                            PriceWatcher é uma aplicação automatizada desenvolvida para monitorar os preços de produtos
+                            em e-commerces de maneira prática e eficiente. Através da leitura de links de produtos
+                            armazenados em uma planilha Excel, a aplicação realiza o scraping dos preços atuais e os
+                            compara com os preços anteriores. Quando um produto tem seu preço alterado (diminuído ou
+                            aumentado), a aplicação atualiza a planilha com o status da alteração e fornece informações
+                            detalhadas sobre cada produto.
+                        </p>
+                    </div>
+                </div><!-- FLEX-->
+            </div><!-- interface-->
+        </section><!-- project-->
+
+        <section class="project" id="technologies">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-project">
+                        <h2 class="title">TECNOLOGIAS <span> UTILIZADAS NO PROJETO</span></h2>
+                        <p>
+                            O PriceWatcher é uma aplicação desktop desenvolvida em python, atualmente o E-commerce ao
+                            qual a automação verifica os produtos é a <b>KaBuM!</b> um comércio eletrônico brasileiro de
+                            tecnologia, especializado em hardware, linha gamer, eletrônicos, smart home e smartphones.
+                        </p>
+                        <p>
+                            O Python foi a escolha
+                            principal pela sua flexibilidade e
+                            robustez, permitindo o desenvolvimento ágil e eficiente da aplicação. Para realizar
+                            requisições HTTP e acessar as páginas dos produtos, utilizamos Requests, que facilita a
+                            comunicação com os sites e a coleta das informações. O BeautifulSoup entra em cena para
+                            realizar o scraping das páginas, extraindo de forma precisa os preços dos produtos. Para
+                            manipulação e análise dos dados coletados, o Pandas é essencial, oferecendo funcionalidades
+                            poderosas para comparar os preços e gerar relatórios completos em Excel.
+
+                        <p>
+                            Para garantir a
+                            perfeita interação com os arquivos Excel, contamos com openpyxl, que nos permite ler e
+                            gravar dados de forma eficiente. Além disso, a aplicação roda de forma automatizada e
+                            em segundo plano, graças ao agendador de tarefas do windows é possível que a aplicação faça
+                            o
+                            monitoramento sem necessidade de intervenção manual, basta agendar horarios para iniciar a
+                            aplicação.
+                        </p>
+                    </div>
+                    <div class="img-project">
+                        <img src="images/Price_Watcher.gif" alt="welliton DEV" height="1200" width="900">
+                        <figcaption style="text-align: center; font-size: 14px; color: #FFF;">Funcionamento da aplicação
+                        </figcaption>
+                    </div>
+                </div><!-- FLEX-->
+            </div><!-- interface-->
+        </section><!-- project-->
+
+        <section class="project" id="graphical-interface">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-project">
+                        <h2 class="title">SOBRE O <span>SOFTWARE</span></h2>
+                        <p>
+
+                        </p>
+                        <p>
+                            Com o PriceWatcher, o monitoramento de preços de produtos nunca foi tão fácil e eficiente! A
+                            automação elimina a necessidade de verificar manualmente os preços de diversos itens,
+                            poupando seu tempo e esforço. O sistema oferece notificações em tempo real sempre que houver
+                            uma alteração de preço — seja uma queda, aumento ou estabilidade — permitindo que você tome
+                            decisões de compra mais informadas e no momento certo. Além disso, a aplicação funciona de
+                            forma autônoma em segundo plano, atualizando os dados de
+                            maneira contínua, sem a necessidade de sua intervenção constante. Com o PriceWatcher, você
+                            fica sempre por dentro das melhores ofertas e descontos sem levantar um dedo!
+                        </p>
+                    </div>
+                </div><!-- FLEX-->
+            </div><!-- interface-->
+        </section><!-- project-->
+        <footer>
+            <div class="interface">
+                <div class="line-footer border-line">
+                    <div class="flex">
+                        <div class="logo-footer">
+                            <a href="#top"><img src="images/logo.png" width="80" height="80" alt="logo"></a>
+                        </div><!-- logo-footer  -->
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/wellitondasilvadelima" target="_blank"><button> <i
+                                        class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/wellitondasilvadelima" target="_blank"><button> <i
+                                        class="bi bi-github"></i>
+                                </button></a>
+                        </div> <!-- btn-social -->
+                    </div><!-- flex  -->
+
+                </div><!-- line footer  -->
+                <div class="line-footer">
+                    <p> WELLITON LIMA DEV </p>
+                </div>
+
+            </div><!-- interface  -->
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- FIM GOOGlE FONTS-->
+
+    <!-- BOOTSTRAO ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM BOOTSTRAO ICONS -->
+
+    <script src="script.js" defer></script>
+
+    <title>Welliton DEV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body #top>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <div class="logo-img">
+                    <a href="index.html" onclick="window.location.href='index.html'">
+                        <img src="images/logo.png" alt="Logo DEV" height="100" width="100">
+                    </a>
+                </div>
+            </div><!-- LOGO -->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li> <a href="index.html" onclick="window.location.href='index.html'">PÁGINA INICIAL</a> </li>
+                    <li> <a href="#description">DESCRIÇÃO</a> </li>
+                    <li> <a href="#technologies">TECNOLOGIAS</a> </li>
+                    <li> <a href="#graphical-interface">SOFTWARE</a> </li>
+                </ul>
+            </nav>
+
+            <div class="btn-open-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-open-menu -->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-close">
+                    <i class="bi bi-x-circle"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li> <a href="index.html" onclick="window.location.href='index.html'">Início</a> </li>
+                        <li> <a href="#description">DESCRIÇÃO</a> </li>
+                        <li> <a href="#technologies">TECNOLOGIAS</a> </li>
+                        <li> <a href="#graphical-interface">SOFTWARE</a> </li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile -->
+            <div class="overlay-menu" id="overlay-menu"></div><!--overlay-menu -->
+        </div><!--interface -->
+    </header>
+
+    <main>
+        <section class="project" id="project">
+            <div class="interface">
+                <h2 class="title">PROJETO: <span>LEITOR DE INVOICE PDF</span></h2>
+                <div class="flex">
+                    <div class="img-project">
+                        <img src="images/projeto-leitorr-invoice.png" alt="welliton DEV" height="400" width="400">
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://github.com/wellitondasilvadelima/PDF_Invoice_Extractor"
+                            target="_blank"><button>
+                                <i class="bi bi-github"></i></button>
+                        </a>
+                    </div>
+                    <div class="btn">
+                        <a href="https://github.com/wellitondasilvadelima/PDF_Invoice_Extractor/raw/refs/heads/main/PDFInvoiceReader_exe.zip"
+                            target="_blank">
+                            <button>Download .EXE</i></button>
+                        </a>
+                    </div>
+                    <div class="txt-project">
+                        <p>
+                            Este projeto consiste em um software automatizado para leitura de invoices em PDF, extração
+                            de informações relevantes e armazenamento dessas informações em um banco de dados MySQL. Ele
+                            tem como objetivo agilizar e otimizar o processamento de documentos fiscais, eliminando a
+                            necessidade de entrada manual de dados e reduzindo possíveis erros humanos.
+
+                        </p>
+                    </div>
+                </div><!-- FLEX-->
+            </div><!-- interface-->
+        </section><!-- project-->
+
+        <section class="project" id="description">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-project">
+                        <h2 class="title">DESCRIÇÃO DO <span>PROJETO</span></h2>
+                        <p>
+                            Muitas empresas lidam diariamente com uma grande quantidade de notas fiscais e invoices. O
+                            processo de entrada manual dessas informações em um banco de dados pode ser demorado,
+                            sujeito a erros e ineficiente. O projeto visa solucionar esses problemas por meio da
+                            automação, garantindo que os dados extraídos sejam precisos e armazenados corretamente para
+                            futuras consultas e análises.
+                        </p>
+                        <p>
+                            O software lê os arquivos PDF da pasta input, extrai os dados relevantes (como número da
+                            invoice, data, valor, itens e pagamento), e os salva no banco de dados. O sistema também faz
+                            a organização dos arquivos, movendo os arquivos processados corretamente para a pasta
+                            <b>data</b>,
+                            e os arquivos que apresentaram erro para <b>dataerror</b>. Além disso, um arquivo Excel é
+                            gerado na
+                            pasta <b>output</b> com o log do processamento.
+                        </p>
+                        <p>
+
+                        </p>
+                    </div>
+                </div><!-- FLEX-->
+            </div><!-- interface-->
+        </section><!-- project-->
+
+        <section class="project" id="technologies">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-project">
+                        <h2 class="title">TECNOLOGIAS <span> UTILIZADAS NO PROJETO</span></h2>
+                        <p>
+                            <b>PyODBC (Conexão com o banco de dados)</b>:
+                            O PyODBC é utilizado para estabelecer a comunicação entre o Python e o banco de dados MySQL
+                            via driver ODBC. Ele permite executar queries SQL, inserir, atualizar e recuperar
+                            informações das invoices.
+                        </p>
+                        <p>
+                            <b> MySQL (Banco de Dados)</b>:
+                            O sistema utiliza MySQL para armazenar os dados extraídos das invoices. O banco de dados
+                            <b>database_invoices</b> é criado automaticamente caso não exista, e contém as seguintes
+                            tabelas:
+                            <br>- <b>Invoices: Armazena informações gerais das invoices (número, data, valor total,
+                                etc.).</b>
+                            <br>- <b>Invoices_Items: Contém os detalhes dos itens de cada invoice.</b>
+                            <br>- <b>Payments: Registra
+                                informações de pagamento associadas às invoices.</b>
+                        </p>
+                        <p>
+                            <b>Pandas (Processamento e Log)</b>:
+
+                            A biblioteca Pandas é usada para manipulação e tratamento de dados. Além disso, ela permite
+                            gerar um arquivo Excel que registra os logs do processamento, contendo informações como:
+                            <b>Nome do documento</b>, <b>Data e hora do processamento</b>, <b>Nota extraída</b>,
+                            <b>Status
+                                do processamento (sucesso ou erro)</b>
+                        </p>
+                        <p>
+                            <b>CustomTkinter (Interface Gráfica)</b>:
+                            O CustomTkinter é uma biblioteca baseada no Tkinter, que permite a criação de uma interface
+                            moderna e responsiva. O usuário pode interagir com o software de maneira simples, apenas
+                            clicando em um botão para iniciar o processamento.
+                        </p>
+                    </div>
+                </div><!-- FLEX-->
+            </div><!-- interface-->
+        </section><!-- project-->
+
+        <section class="project" id="graphical-interface">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-project">
+                        <h2 class="title">SOBRE O <span>SOFTWARE</span></h2>
+                        <p>
+                            <b>Interface Intuitiva</b>: O usuário não precisa de conhecimento técnico para operar o
+                            sistema. Basta selecionar os arquivos ou deixar os documentos na pasta input e clicar em um
+                            botão para iniciar o processamento. A interface foi projetada para ser simples, eficiente e
+                            visualmente agradável.
+                        </p>
+                        <p>
+                            <b>Persistência dos Dados no Banco de Dados</b>:
+                            Todas as informações extraídas são armazenadas no MySQL, garantindo que possam ser
+                            consultadas posteriormente.
+                            Se uma invoice já foi processada anteriormente, os dados são atualizados para evitar
+                            duplicidade.
+                        </p>
+                        <p> <b>Log da Automação</b>: Cada execução do software gera um relatório detalhado em Excel na
+                            pasta output, contendo informações essenciais sobre o processamento.
+                            Isso permite que o usuário acompanhe quais arquivos foram processados com sucesso e quais
+                            apresentaram erros</p>
+                        <p>
+                            Este projeto proporciona eficiência e precisão no tratamento de invoices em PDF, garantindo
+                            que os dados sejam extraídos corretamente e armazenados de forma segura. Com uma interface
+                            intuitiva e um banco de dados estruturado, a automação desse processo economiza tempo e
+                            reduz erros manuais, tornando-se uma solução ideal para empresas que lidam com grande volume
+                            de documentos fiscais.
+                        </p>
+                    </div>
+                    <div class="img-project">
+                        <img src="images/leitor_de_invoice.gif" alt="welliton DEV" height="1200" width="800">
+                        <figcaption style="text-align: center; font-size: 14px; color: #FFF;">Funcionamento da aplicação
+                        </figcaption>
+                    </div>
+                </div><!-- FLEX-->
+            </div><!-- interface-->
+        </section><!-- project-->
+        <footer>
+            <div class="interface">
+                <div class="line-footer border-line">
+                    <div class="flex">
+                        <div class="logo-footer">
+                            <a href="#top"><img src="images/logo.png" width="80" height="80" alt="logo"></a>
+                        </div><!-- logo-footer  -->
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/wellitondasilvadelima" target="_blank"><button> <i
+                                        class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/wellitondasilvadelima" target="_blank"><button> <i
+                                        class="bi bi-github"></i>
+                                </button></a>
+                        </div> <!-- btn-social -->
+                    </div><!-- flex  -->
+
+                </div><!-- line footer  -->
+                <div class="line-footer">
+                    <p> WELLITON LIMA DEV </p>
+                </div>
+
+            </div><!-- interface  -->
+        </footer>
+
+</body>
+
+</html>
